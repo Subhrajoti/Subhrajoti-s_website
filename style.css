@@ -10,7 +10,7 @@ body {
 .image {
 
     background-size: cover;
-    height: 36vh;
+    max-height: 36vh;
 
     min-height: 36vh;
     max-width: 100%;
