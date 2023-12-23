@@ -12,7 +12,7 @@ iframe {
     background-size: cover;
     height: 36vh;
 
-    min-height: 50%;
+   max-height: 50%;
     max-width: 100%;
 
 }
