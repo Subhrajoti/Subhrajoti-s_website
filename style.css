@@ -1,4 +1,4 @@
- 
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
 body,
 header,
@@ -9,10 +9,10 @@ iframe {
 
 .image {
 
-    
+    background-size: cover;
     height: 36vh;
 
-   max-height: 50%;
+    min-height: 50%;
     max-width: 100%;
 
 }
@@ -58,13 +58,11 @@ footer {
 }
 
 .btn {
-    padding:15px; color: white;border-radius:15px;
-                                margin: auto;
-                                border-radius:15px;
-                                border-style: solid;
-                                border-color: white;
-                                height:50px;
-                                width:150px;
-                                margin-top:15px; background-color: red;font-weight:bold;
+    color: white;
+    border-style: solid;
+    margin: 5px;
+
+    border-width: 1px;
+    border-color: white;
 
 }
