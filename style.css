@@ -58,11 +58,13 @@ footer {
 }
 
 .btn {
-    color: white;
-    border-style: solid;
-    margin: 5px;
-
-    border-width: 1px;
-    border-color: white;
+    padding:15px; color: white;border-radius:15px;
+                                margin: auto;
+                                border-radius:15px;
+                                border-style: solid;
+                                border-color: white;
+                                height:50px;
+                                width:150px;
+                                margin-top:15px; background-color: red;font-weight:bold;
 
 }
