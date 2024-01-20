@@ -391,13 +391,25 @@
                 </h3>
             </div>
         </section>
-        <div class="counter-container" style="text-align:center;padding:15px;line-height:2em;">
+        <div class="counter-container">
             <h1 class="text-light">COUNTER</h1>
             <div>
                 <p id="count" class="text-light">0</p>
                 <button id="decreaseButton">DECREASE</button>
                 <button id="resetButton">RESET</button>
                 <button id="increaseButton">INCREASE</button>
+            </div>
+        </div>
+        <div class="counter-container">
+            <h1 class="text-light">GUESS THE RIGHT NUMBER!</h1>
+            <div>
+                <div style="padding:15px;">
+                    <label style="display:block;color:white;">GUESS NO:</label>
+                    <input id="guessNum" style="display:block;margin:0 auto;font-weight:bold;padding:auto;height:50px;width:150px;border:2px red solid;border-radius:15px;" type="number" value="" min="0" max="100">
+                </div>
+
+                <button id="checkNumber" onclick="checkNum()" class="guessbtn">GUESS</button>
+                <p id="messagePara"></p>
             </div>
         </div>
         <a href="https://www.youtube.com/@subhrajotichakrabarty/featured" target="_blank"><span style="margin-left:15px;font-weight:bold;margin:15px;">and many more...</span></a>
