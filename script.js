@@ -22,3 +22,27 @@ resetButton.addEventListener("click", function onReset() {
     count = 0;
     counter.innerText = "0";
 })
+
+// Guess Game:
+let guessedNumber = document.getElementById("guessNum");
+let randomNumber = Math.ceil(Math.random() * 100);
+
+function checkNum() {
+    if (randomNumber < guessedNumber) {
+        document.getElementById("messagePara").innerText = "Too High, Try Again";
+        document.getElementById("messagePara").style.backgroundColor = "red";
+        document.getElementById("messagePara").style.fontWeight = "bold";
+    } else if (randomNumber > guessedNumber) {
+        document.getElementById("messagePara").innerText = "Too Low, Try Again";
+        document.getElementById("messagePara").style.backgroundColor = "red";
+        document.getElementById("messagePara").style.fontWeight = "bold";
+    } else {
+        document.getElementById("messagePara").innerHTML = "Congratulation, Right Guess!";
+        document.getElementById("messagePara").style.backgroundColor = "yellow";
+        document.getElementById("messagePara").style.fontWeight = "bold";
+
+
+    }
+
+
+}
