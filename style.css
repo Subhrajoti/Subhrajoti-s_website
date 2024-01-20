@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
 body,
 header,
@@ -8,7 +9,7 @@ iframe {
 
 .counter-container {
     text-align: center;
-    border: 2px white solid;
+    border: white 2px solid;
     padding: 15px;
     margin: 15px 0px;
 }
@@ -18,25 +19,12 @@ iframe {
     font-weight: bold;
 }
 
-#increaseButton{
+#increaseButton,
+#decreaseButton,
+#resetButton,
+.guessbtn {
     border: 2px white solid;
-    background: transparent;
-    color: white;
-    border-radius: 15px;
-    padding: 15px;
-}
-
-#decreaseButton{
-    border: 2px white solid;
-    background: transparent;
-    color: white;
-    border-radius: 15px;
-    padding: 15px;
-}
-
-#resetButton {
-    border: 2px white solid;
-    background: transparent;
+    background: red;
     color: white;
     border-radius: 15px;
     padding: 15px;
@@ -67,7 +55,7 @@ footer {
 
 .br {
 
-    background-color: linear-gradient(90deg, red, blue)
+    background: linear-gradient(90deg, red, blue)
 }
 
 
