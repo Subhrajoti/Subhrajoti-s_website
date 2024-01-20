@@ -24,10 +24,11 @@ resetButton.addEventListener("click", function onReset() {
 })
 
 // Guess Game:
-let guessedNumber = document.getElementById("guessNum");
+let guessedNum = document.getElementById("guessNum");
 let randomNumber = Math.ceil(Math.random() * 100);
 
 function checkNum() {
+    let guessedNumber = parseInt(guessedNum);
     if (randomNumber < guessedNumber) {
         document.getElementById("messagePara").innerText = "Too High, Try Again";
         document.getElementById("messagePara").style.backgroundColor = "red";
