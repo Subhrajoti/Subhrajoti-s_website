@@ -30,25 +30,30 @@ let guess = document.getElementById("guessNum").value;
 
 function checkNum() {
     let guessedNumber = parseInt(guessedNum.value);
-    if (guess === "") {
-        document.getElementById("messagePara").innerText = "Give Some inputs!";
-        document.getElementById("messagePara").style.backgroundColor = "red";
-        document.getElementById("messagePara").style.fontWeight = "bold";
-    } else if (randomNumber < guessedNumber) {
+    if (randomNumber < guessedNumber) {
+       
         document.getElementById("messagePara").innerText = "Too High, Try Again";
         document.getElementById("messagePara").style.backgroundColor = "red";
         document.getElementById("messagePara").style.fontWeight = "bold";
     } else if (randomNumber > guessedNumber) {
+        
         document.getElementById("messagePara").innerText = "Too Low, Try Again";
         document.getElementById("messagePara").style.backgroundColor = "red";
         document.getElementById("messagePara").style.fontWeight = "bold";
-    } else {
-        document.getElementById("messagePara").innerHTML = "Congratulation, Right Guess!";
+    } else if (randomNumber === guessedNumber) {
+         document.getElementById("messagePara").innerHTML = "Congratulation, Right Guess!";
         document.getElementById("messagePara").style.backgroundColor = "yellow";
         document.getElementById("messagePara").style.fontWeight = "bold";
-
+    } else {
+        
+        document.getElementById("messagePara").innerText = "Give Some inputs!";
+        document.getElementById("messagePara").style.backgroundColor = "red";
+        document.getElementById("messagePara").style.fontWeight = "bold";
 
     }
+
+
+}
 
 
 }
