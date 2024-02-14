@@ -100,10 +100,6 @@
                 margin-bottom: 50px;
             }
 
-            .test0 {
-                font-size: 30px
-            }
-
 
 
             div a:hover {
@@ -421,12 +417,14 @@
             </div>
         </section>
         <div class="counter-container">
-            <h1 class="text-light">COUNTER</h1>
-            <div>
-                <p id="count" class="text-light">0</p>
-                <button id="decreaseButton">DECREASE</button>
-                <button id="resetButton">RESET</button>
-                <button id="increaseButton">INCREASE</button>
+             <div>
+                <img id="puppyImage" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/white-puppy-img.png" class="puppy-image" />
+                <div class="d-flex flex-row justify-content-center mt-4">
+                    <i id="likeIcon" class="fa fa-thumbs-up like-icon" aria-hidden="true"></i>
+                    <button id="likeButton" class="like-button ml-2" onclick="onClickLikeButton()">
+                        Like
+                    </button>
+                </div>
             </div>
         </div>
         <div class="counter-container">
