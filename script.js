@@ -1,27 +1,25 @@
 console.log("Hello Every Vistors");
 // small JavaScript Project:
-var counter = document.getElementById("count");
-var decreaseButton = document.getElementById("decreaseButton");
-var increaseButton = document.getElementById("increaseButton");
-var resetButton = document.getElementById("resetButton");
+var img = document.getElementById("puppyImage");
+var button = document.getElementById("likeButton");
+var font = document.getElementById("likeIcon");
+let is_clicked = false;
 
-decreaseButton.addEventListener("click", function chageFont() {
-    var count = counter.innerText;
-    count = parseInt(count) - 1;
-    counter.textContent = count;
-})
-
-increaseButton.addEventListener("click", function onIncrease() {
-    var count = counter.innerText;
-    count = parseInt(count) + 1;
-    counter.innerText = count;
-})
-
-resetButton.addEventListener("click", function onReset() {
-    var count = counter.innerText;
-    count = 0;
-    counter.innerText = "0";
-})
+function onClickLikeButton() {
+    if (is_clicked === false) {
+        img.src = "https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/white-puppy-liked-img.png";
+        button.style.color = "#ffffff";
+        button.style.background = "#0967d2";
+        font.style.color = "#0967d2";
+        is_clicked = true;
+    } else {
+        img.src = "https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/white-puppy-img.png";
+        button.style.color = "#9aa5b1";
+        button.style.background = "#cbd2d9";
+        font.style.color = "#cbd2d9";
+        is_clicked = false;
+    }
+}
 
 // Guess Game:
 let guessedNum = document.getElementById("guessNum");
@@ -31,22 +29,26 @@ let guess = document.getElementById("guessNum").value;
 function checkNum() {
     let guessedNumber = parseInt(guessedNum.value);
     if (randomNumber < guessedNumber) {
+
         document.getElementById("messagePara").innerText = "Too High, Try Again";
         document.getElementById("messagePara").style.backgroundColor = "red";
         document.getElementById("messagePara").style.fontWeight = "bold";
     } else if (randomNumber > guessedNumber) {
+
         document.getElementById("messagePara").innerText = "Too Low, Try Again";
         document.getElementById("messagePara").style.backgroundColor = "red";
         document.getElementById("messagePara").style.fontWeight = "bold";
     } else if (randomNumber === guessedNumber) {
-         document.getElementById("messagePara").innerHTML = "Congratulation, Right Guess!";
+        document.getElementById("messagePara").innerHTML = "Congratulation, Right Guess!";
         document.getElementById("messagePara").style.backgroundColor = "yellow";
         document.getElementById("messagePara").style.fontWeight = "bold";
     } else {
+
         document.getElementById("messagePara").innerText = "Give Some inputs!";
         document.getElementById("messagePara").style.backgroundColor = "red";
         document.getElementById("messagePara").style.fontWeight = "bold";
+
     }
+
+
 }
-
-
