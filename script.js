@@ -47,8 +47,22 @@ function checkNum() {
         document.getElementById("messagePara").innerText = "Give Some inputs!";
         document.getElementById("messagePara").style.backgroundColor = "red";
         document.getElementById("messagePara").style.fontWeight = "bold";
-
     }
+}
+// test:
+var button1 = document.getElementById("button");
 
+function changeColor() {
+    button1.style.textDecoration = "underline";
+    button1.style.width = "170px";
+    button1.style.margin = "0px 5px 0px 0px";
+    button1.style.boxShadow = "1px 2px 10px 5px white"
+}
+
+function resetColor() {
+    button1.style.textDecoration = "";
+    button1.style.width = "";
+    button1.style.margin = "";
+    button1.style.boxShadow = ""
 
 }
