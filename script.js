@@ -1,4 +1,4 @@
-console.log("Hello Vistors");
+console.log("Hello Every Vistors");
 // small JavaScript Project:
 var img = document.getElementById("puppyImage");
 var button = document.getElementById("likeButton");
