@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.dj {
+    box-shadow: 1px 1px 15px 5px white;
+    color: white;
+    padding: 25px;
+    border-radius: 2rem;
+    margin: 15px 0px;
+
+
+}
+
 body,
 header,
 body,
@@ -8,7 +19,6 @@ iframe {
 
 .puppy-image {
     width: 100%;
-    height:35vh;
 }
 
 .like-icon {
@@ -75,11 +85,24 @@ footer {}
 
     background: linear-gradient(90deg, red, blue)
 }
+
+
+
+
+
 .bg-clr {
 
     background-color: #faf0fc;
     height: 100vh;
 }
+
+
+
+
+
+
+
+
 .mg {
     margin: 5px 0px;
 
